@@ -1,8 +1,8 @@
 import requests
 import json
 
-class GetRequester:
 
+class GetRequester:
     def __init__(self, url):
         url = "https://learn-co-curriculum.github.io/json-site-example/endpoints/people.json"
         self.url = url
@@ -14,13 +14,9 @@ class GetRequester:
 
     def load_json(self):
         json_list = []
-        json_list = json.loads(self.get_response_body)
-        for json_list in json_list:
-            json_list.append()
+        json_list = json.loads(self.get_response_body())
+        for json_item in json_list:
+            json_item['']
+            
         return json_list
-    
-
-    load_json = json_list.loadjson()
-    for list in set (load_json):
-        print (json_list)
     
